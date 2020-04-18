@@ -11,28 +11,29 @@
 ```
 TODO
 ```
-
 ### Extruder PID Autotune 
 ```
-TODO
+  #define DEFAULT_Kp <value from Autotune>
+  #define DEFAULT_Ki <value from Autotune>
+  #define DEFAULT_Kd <value from Autotune>
 ```
 ### Bed PID Autotune 
 ```
-TODO
+  #define DEFAULT_bedKp <value from Autotune>
+  #define DEFAULT_bedKi <value from Autotune>
+  #define DEFAULT_bedKd <value from Autotune>
 ```
 ### Probe Offset + Z_SAFE_HOMING
 ```
-#define BLTOUCH
 #define NOZZLE_TO_PROBE_OFFSET { <your x delta>, <your y delta>, 0 }
-
-#define Z_SAFE_HOMING
-
-#if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axes (G28).
-  #define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE) / 2)    // Y point for Z homing when homing all axes (G28).
-#endif
+#define Z_MIN_PROBE_ENDSTOP_INVERTING false  // Set to true to invert the logic of the probe.
+#define BLTOUCH
+#define Z_CLEARANCE_DEPLOY_PROBE    5 // Z Clearance for Deploy/Stow
+#define AUTO_BED_LEVELING_BILINEAR // Untested
+#define Z_SAFE_HOMING // Home Z when centered on bed
+#define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // Adjust for probe offset?
+#define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE) / 2)    // Adjust for probe offset?
 ```
-
 ## Cura Settings based on (Thanks Daniel from https://www.crosslink.io/)
 https://www.youtube.com/watch?v=LEvmc4FFa90
 ```
