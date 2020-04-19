@@ -1,5 +1,8 @@
 # ANET_A8 (AM8) Notes
 
+Place to download older (hard to find) versions of cura:
+http://domoticx.com/3d-slicer-cura-software/
+
 ## Calibratate Printer
 ### Nozzle offset 
 ```
