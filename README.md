@@ -3,7 +3,10 @@
 Place to download older (hard to find) versions of cura:
 http://domoticx.com/3d-slicer-cura-software/
 
-## Calibratate Printer
+## Calibratate Printer (Marlin 2.0 firmware)
+- https://github.com/MarlinFirmware/Marlin
+- https://github.com/MarlinFirmware/Configurations
+
 ### Nozzle offset 
 ```
 (Firmware configuration.h - requires board flash)
