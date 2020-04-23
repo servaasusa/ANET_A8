@@ -71,7 +71,15 @@ M117 Disabling Steppers
 M84 ; Disable stepper motors
 ```
 
-
-
+Marlin 119 setup summary:
+#define Z_MIN_PROBE_ENDSTOP_INVERTING false  // Set to true to invert the logic of the probe.
+#define BLTOUCH
+#define X_PROBE_OFFSET_FROM_EXTRUDER 0   // X offset: -left  +right  [of the nozzle]
+#define Y_PROBE_OFFSET_FROM_EXTRUDER -65   // Y offset: -front +behind [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+#define MIN_PROBE_EDGE 65 // Distance away from bed edges to probe
+#define Z_CLEARANCE_DEPLOY_PROBE   5 // Z Clearance for Deploy/Stow
+#define AUTO_BED_LEVELING_BILINEAR // Untested
+#define Z_SAFE_HOMING // Home Z when centered on bed
 
 Also See Wiki TAB!
