@@ -71,6 +71,15 @@ M117 Disabling Steppers
 M84 ; Disable stepper motors
 ```
 
+*** Cura Octoprint integration
+-> Marketplace -> OctoPrint Connection
+
+*** ANET A8 notes
+reduce fan speed to 40%
+reduce print speed to 35 at first
+
+
+
 Marlin 119 setup summary:
 #define Z_MIN_PROBE_ENDSTOP_INVERTING false  // Set to true to invert the logic of the probe.
 #define BLTOUCH
